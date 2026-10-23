@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Adopt, Foster, and Volunteer | Twin Cities Animal Rescue</title>
 <link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
 </head>
 <body class="services-page">
   <a href="#main-content">Skip to main content</a>
@@ -24,7 +25,32 @@
 <p class="eyebrow">MAKE ROOM FOR POSSIBILITY</p>
 <h1>Adopt, Foster, or Volunteer</h1>
     </div>
-<section aria-labelledby="adoption" class="adoption-section">
+<section class="interest-planner" aria-labelledby="planner-title" id="interest-planner">
+  <p class="eyebrow">FIND YOUR WAY TO HELP</p>
+  <h2 id="planner-title">Make a Plan to Help</h2>
+  <p>Choose an interest to see practical next steps. Save your choice to carry it into the contact form when you are ready.</p>
+  <div id="planner-controls" hidden>
+    <label for="help-choice">How would you like to help?</label>
+    <select id="help-choice">
+      <option value="">Choose an interest</option>
+      <option value="volunteer">Volunteering</option>
+      <option value="foster">Fostering</option>
+      <option value="adoption">Adoption information</option>
+      <option value="partner">Donations or community partnership</option>
+    </select>
+    <div id="help-result" class="help-result" aria-live="polite" aria-atomic="true">
+      <p>Select an interest above to see how you can get started.</p>
+    </div>
+    <div class="planner-actions">
+      <button id="save-interest" type="button" disabled>Remember my interest</button>
+      <button id="clear-interest" class="secondary-button" type="button">Forget my saved interest</button>
+    </div>
+    <p id="storage-feedback" class="feedback" role="status"></p>
+    <p class="storage-note">Only your interest choice is saved in this browser on this device. You can remove it at any time.</p>
+    <a id="planner-contact" class="text-link" href="contact.html#interest">Continue to the interest form</a>
+  </div>
+  <noscript><p>Enable JavaScript to use the interest planner, or <a href="contact.html#interest">open the interest form</a>.</p></noscript>
+</section><section aria-labelledby="adoption" class="adoption-section">
       <h2 id="adoption">Adoption Overview</h2>
       <p>Finding a good match starts with understanding a pet's needs and your household. Ask our team about available animals and the support that helps them settle in.</p>
       <ol>

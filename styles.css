@@ -89,3 +89,19 @@ footer a:hover { color: var(--white); }
   footer { flex-direction: row; justify-content: space-between; align-items: center; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Touchstone 4: interest planning and inline form feedback. */
+.interest-planner { background: var(--white); border: 1px solid var(--green); padding: 1.5rem; max-width: 850px; }
+.interest-planner h2 { margin-bottom: 1rem; }
+.interest-planner select { max-width: 620px; }
+.help-result { border-left: 4px solid var(--rust); padding: 1rem 1.25rem; margin: 1.5rem 0; background: var(--cream); }
+.help-result h3 { font: normal 1.6rem/1.2 Georgia, serif; margin: 0 0 .8rem; }
+.help-result p:last-child, .help-result ul { margin-bottom: 0; }
+.planner-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+.secondary-button { color: var(--green); background: var(--white); }
+button:disabled { opacity: .65; cursor: default; }
+.feedback { font-weight: bold; margin: 1rem 0; }
+.feedback:empty, .field-error:empty { display: none; }
+.field-error { display: block; color: var(--rust); font-size: .9rem; font-weight: bold; margin-top: .4rem; }
+[aria-invalid="true"] { border: 2px solid var(--rust); }
+.storage-note { font-size: .85rem; }
