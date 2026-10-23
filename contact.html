@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact and Get Involved | Twin Cities Animal Rescue</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="contact-page">
+  <a href="#main-content">Skip to main content</a>
+  <header>
+    <p class="brand"><a href="index.html">Twin Cities<span>ANIMAL RESCUE</span></a></p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Ways to Help</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html" aria-current="page">Get Involved</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content" class="contact-layout">
+    <div class="page-intro">
+<p class="eyebrow">YOUR NEXT STEP STARTS HERE</p>
+<h1>Take the First Step to Help</h1>
+    </div>
+<section aria-labelledby="area">
+      <h2 id="area">Service Area</h2>
+      <p>We connect with adopters, foster caregivers, and volunteers across Minneapolis, Saint Paul, and surrounding Twin Cities communities.</p>
+    </section>
+    <section aria-labelledby="hours">
+      <h2 id="hours">Office Hours</h2>
+      <p>Sample office hours for this student website: Monday through Friday, 9 a.m. to 5 p.m. Central Time. Visits and animal meetings are by appointment.</p>
+    </section>
+    <section aria-labelledby="interest">
+      <h2 id="interest">Volunteer or Foster Interest Form</h2>
+      <p>Tell us how you would like to help. All fields are required.</p>
+      <p id="form-note">This student demonstration validates entries in your browser; it does not send or save an inquiry.</p>
+      <form action="contact.html#interest" method="get" aria-describedby="form-note">
+        <fieldset>
+          <legend>Your Contact Information</legend>
+          <p>
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="100">
+          </p>
+          <p>
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required maxlength="254">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Your Interests and Availability</legend>
+          <p>
+            <label for="interest-type">Interest type</label>
+            <select id="interest-type" name="interest" required>
+              <option value="">Choose an interest</option>
+              <option value="volunteer">Volunteering</option>
+              <option value="foster">Fostering</option>
+              <option value="adoption">Adoption information</option>
+              <option value="partner">Donations or community partnership</option>
+            </select>
+          </p>
+          <p id="availability-help">Include days, times, and how often you can help.</p>
+          <p>
+            <label for="availability">Availability</label>
+            <input id="availability" name="availability" type="text" aria-describedby="availability-help" required minlength="3" maxlength="200">
+          </p>
+          <p>
+            <label for="experience">Experience with pets, including none</label>
+            <textarea id="experience" name="experience" rows="3" cols="40" required minlength="3" maxlength="1000"></textarea>
+          </p>
+          <p>
+            <label for="message">Short message</label>
+            <textarea id="message" name="message" rows="4" cols="40" required minlength="10" maxlength="1000"></textarea>
+          </p>
+        </fieldset>
+        <button type="submit">Check my interest form</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Twin Cities Animal Rescue • Care begins with community.</p>
+    <p><a href="contact.html">Contact our rescue team</a></p>
+  </footer>
+</body>
+</html>
